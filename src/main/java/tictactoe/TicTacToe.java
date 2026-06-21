@@ -23,7 +23,7 @@ public class TicTacToe {
     }
 
     public boolean isGameOver() {
-        return board.isFull(); // Optional: Sieg-Logik könnte ergänzt werden
+        return board.isFull();
     }
 
     public void printBoard() {
@@ -36,5 +36,10 @@ public class TicTacToe {
 
     public char[][] getBoard() {
         return board.getCells();
+    }
+
+    public void restart() {
+        board.reset();
+        currentPlayer = 'X';
     }
 }
