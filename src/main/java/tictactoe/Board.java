@@ -1,4 +1,4 @@
-package tictactoe;
+package TicTacToe;
 
 public class Board {
 
@@ -20,6 +20,18 @@ public class Board {
 
     public void place(int row, int col, char marker) {
         cells[row][col] = marker;
+    }
+
+    public boolean isFull() {
+        for (int i = 0; i < 3; i++) {
+            for (int j = 0; j < 3; j++) {
+                if (cells[i][j] == '-') {
+                    return false;
+                }
+            }
+        }
+
+        return true;
     }
 
     public void print() {
