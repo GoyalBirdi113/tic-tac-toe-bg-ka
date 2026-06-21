@@ -1,4 +1,4 @@
-package TicTacToe;
+package tictactoe;
 
 public class Board {
 
@@ -41,5 +41,9 @@ public class Board {
             }
             System.out.println();
         }
+    }
+
+    public char[][] getCells() {
+        return cells;
     }
 }
